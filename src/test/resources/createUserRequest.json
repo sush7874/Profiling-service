@@ -1,0 +1,21 @@
+{
+  "payload": {
+    "userDetails": {
+      "businessName": "McDonalds Whitefield",
+      "legalName": "MCD Pvt Ltd",
+      "businessAddress": "3rd Cross, 5th Street, Main road, Whitefield",
+      "legalAddress": "3rd floor, Park Square Mall, Whitefield",
+      "pan": "HABNDJS880",
+      "emailId": "mcd@gmail.com",
+      "websiteUrl": "mcd.com",
+      "subscriptions": [
+        {
+          "productId": "57c43399-1176-4620-a048-5e3fb2aa3312"
+        },
+        {
+          "productId": "d5a0174f-17ff-4ac8-a7fd-494bfe5934cf"
+        }
+      ]
+    }
+  }
+}
