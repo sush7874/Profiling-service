@@ -75,7 +75,10 @@ public class ProductHelper {
                 }
             }
             return mapper.reverseMap(updatedProd);
-        }catch (Exception e){
+        }catch (ProfileServiceException pex){
+            throw pex;
+        }
+        catch (Exception e){
             throw new ProfileServiceException(e);
         }
     }
@@ -92,7 +95,10 @@ public class ProductHelper {
                     sHelper.updateSubscriptionStatus(s);
                 }
             }
-        }catch (Exception e){
+        }catch (ProfileServiceException pex){
+            throw pex;
+        }
+        catch (Exception e){
             throw new ProfileServiceException(e);
         }
     }

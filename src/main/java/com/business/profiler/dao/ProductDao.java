@@ -43,7 +43,7 @@ public class ProductDao {
             dbMapper.save(productInfo);
             return productInfo;
         }else{
-            throw new ProfileServiceException(ErrorCode.NO_PRODUCT_FOUND);
+            throw new ProfileServiceException(ErrorCode.NO_PRODUCT_FOUND, product.getProductId());
         }
 
     }
@@ -54,7 +54,7 @@ public class ProductDao {
         if(Objects.nonNull(toDelete)){
             dbMapper.delete(toDelete);
         }else {
-            throw new ProfileServiceException(ErrorCode.NO_PRODUCT_FOUND);
+            throw new ProfileServiceException(ErrorCode.NO_PRODUCT_FOUND, productId);
         }
     }
 
